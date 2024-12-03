@@ -1,0 +1,93 @@
+/* Fondo y navegación */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.fondo-imagen {
+    width: 100%;
+    height: 33vh;  /* Ocupa un tercio de la pantalla */
+    object-fit: cover;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contenido */
+.contenido {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los cuadros */
+.cuadros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cuadro {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadro img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cuadro p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Adaptabilidad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .cuadros {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadros {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,2 @@
+// Si quieres agregar funcionalidad extra, como agregar opiniones dinámicamente, puedes hacerlo aquí.
+// En este caso, las opiniones están fijas en el HTML, pero podemos agregar lógica para mostrar u ocultar opiniones si es necesario.

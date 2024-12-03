@@ -1,0 +1,143 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Contenedor principal */
+.contenido {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Lista de docentes */
+.docentes-lista {
+    margin-top: 20px;
+}
+
+#lista-docentes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.docente {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(100% / 3 - 30px);
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.docente:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Información del docente */
+.docente-info {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.imagen-docente {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+.estrictez {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4757;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 0.9em;
+}
+
+/* Opiniones */
+.opiniones {
+    text-align: left;
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none; /* Por defecto estará oculto */
+    transition: all 0.3s ease-in-out;
+}
+
+.opiniones h4 {
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.opiniones p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Botón para mostrar/ocultar opiniones */
+.toggle-opiniones {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-opiniones:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .docente {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .docente {
+        width: 100%;
+    }
+
+    .imagen-docente {
+        width: 80px;
+        height: 80px;
+    }
+}

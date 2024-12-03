@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, .contenido, .noticias, .eventos {
+    width: 100%;
+}
+
+/* Imagen de fondo en el header */
+.fondo-imagen {
+    width: 100%;
+    height: 33vh;
+    object-fit: cover;
+}
+
+/* Estilos del menú */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.contenido {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cuadros de noticias y eventos */
+.cuadros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cuadro {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadro img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cuadro p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Design */
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cuadros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .fondo-imagen {
+        height: 25vh; /* Reducimos el tamaño de la imagen en móviles */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .cuadros {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .cuadro {
+        padding: 15px;
+    }
+
+    .cuadro img {
+        max-width: 90%; /* Hacemos las imágenes más pequeñas en móviles */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles más pequeños) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}

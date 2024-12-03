@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votaciones</title>
+    <link rel="stylesheet" href="StyleV.css">
+    <link rel="stylesheet" href="Responsive.css">
+</head>
+<body>
+    <div class="contenido">
+        <h2>Votaciones</h2>
+
+        <!-- Categorías -->
+        <div class="categorias">
+            <h3>Selecciona una categoría:</h3>
+            <ul>
+                <li><button class="categoria-btn" data-categoria="Mejor Docente">Docente favorito o favorita </button></li>
+                <li><button class="categoria-btn" data-categoria="Más Innovador">Docente mas enojon o enojona
+                </button></li>
+                <li><button class="categoria-btn" data-categoria="Mejor Expositor">Docente mas buena onda
+                </button></li>
+                <li><button class="categoria-btn" data-categoria="Mejor Tutor">Docente mas guapo o guapa</button></li>
+            </ul>
+        </div>
+
+        <!-- Lista de docentes -->
+        <div class="docentes">
+            <h3>Docentes disponibles:</h3>
+            <ul id="lista-docentes">
+                <!-- Lista de docentes (sin conexión a base de datos) -->
+ <li class="docente" data-categoria="Mejor Docente">
+<img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+<span>Docente 1</span>
+<button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Docente">
+                    <img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+                    <span>Docente 1</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Docente">
+                    <img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+                    <span>Docente 1</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Docente">
+                    <img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+                    <span>Docente 1</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Docente">
+                    <img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+                    <span>Docente 1</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Docente">
+                    <img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+                    <span>Docente 1</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Docente">
+                    <img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+                    <span>Docente 1</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+              <li class="docente" data-categoria="Mejor Docente">
+                    <img src="imagenes/Docente.jpg" alt="Docente 1" class="imagen-docente">
+                    <span>Docente 1</span>
+                    <button class="votar-btn">Votar</button>
+                </li>  
+                <li class="docente" data-categoria="Más Innovador">
+                    <img src="imagenes/Docente.jpg" alt="Docente 2" class="imagen-docente">
+                    <span>Docente 2</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Expositor">
+                    <img src="imagenes/Docente.jpg" alt="Docente 3" class="imagen-docente">
+                    <span>Docente 3</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <li class="docente" data-categoria="Mejor Tutor">
+                    <img src="imagenes/Docente.jpg" alt="Docente 4" class="imagen-docente">
+                    <span>Docente 4</span>
+                    <button class="votar-btn">Votar</button>
+                </li>
+                <!-- Puedes agregar más docentes según sea necesario -->
+            </ul>
+        </div>
+
+        <!-- Mensaje de confirmación -->
+        <div id="confirmacion" style="display: none;">
+            <p>Gracias por tu voto!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
