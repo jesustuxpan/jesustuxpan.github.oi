@@ -5,19 +5,22 @@ const listaMaterias = document.getElementById('lista-materias');
 // Materias por categoría (estático)
 const materias = {
     "Ciencias": [
-        { nombre: "Física", imagen: "fisica.jpg" },
-        { nombre: "Química", imagen: "quimica.jpg" },
-        { nombre: "Biología", imagen: "biologia.jpg" }
+        { nombre: "Física", imagen: "libro.jpg" },
+        { nombre: "Cálculo", imagen: "libro.jpg" },
+        { nombre: "Ingles", imagen: "libro.jpg" }
+        { nombre: "Mss1", imagen: "libro.jpg" },
+        { nombre: "Cálculo", imagen: "libro.jpg" },
+        { nombre: "Ingles", imagen: "libro.jpg" }
     ],
     "Humanidades": [
-        { nombre: "Historia", imagen: "historia.jpg" },
-        { nombre: "Filosofía", imagen: "filosofia.jpg" },
-        { nombre: "Sociología", imagen: "sociologia.jpg" }
+        { nombre: "Física", imagen: "libro.jpg" },
+        { nombre: "Cálculo", imagen: "libro.jpg" },
+        { nombre: "Ingles", imagen: "libro.jpg" }
     ],
     "Tecnología": [
-        { nombre: "Programación", imagen: "programacion.jpg" },
-        { nombre: "Electrónica", imagen: "electronica.jpg" },
-        { nombre: "Robótica", imagen: "robotica.jpg" }
+        { nombre: "Física", imagen: "libro.jpg" },
+        { nombre: "Cálculo", imagen: "libro.jpg" },
+        { nombre: "Ingles", imagen: "libro.jpg" }
     ]
 };
 
