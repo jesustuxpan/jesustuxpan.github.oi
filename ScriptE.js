@@ -4,7 +4,7 @@ const listaMaterias = document.getElementById('lista-materias');
 
 // Materias por categoría (estático)
 const materias = {
-    "Ciencias": [
+    "Programación": [
         { nombre: "Física", imagen: "libro.jpg" },
         { nombre: "Cálculo", imagen: "libro.jpg" },
         { nombre: "Ingles", imagen: "libro.jpg" }
@@ -12,12 +12,12 @@ const materias = {
         { nombre: "Cálculo", imagen: "libro.jpg" },
         { nombre: "Ingles", imagen: "libro.jpg" }
     ],
-    "Humanidades": [
+    "Animación digital": [
         { nombre: "Física", imagen: "libro.jpg" },
         { nombre: "Cálculo", imagen: "libro.jpg" },
         { nombre: "Ingles", imagen: "libro.jpg" }
     ],
-    "Tecnología": [
+    "Diseño de modas": [
         { nombre: "Física", imagen: "libro.jpg" },
         { nombre: "Cálculo", imagen: "libro.jpg" },
         { nombre: "Ingles", imagen: "libro.jpg" }
