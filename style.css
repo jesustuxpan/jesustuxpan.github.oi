@@ -14,20 +14,20 @@ h2 {
 
 /* Encabezado */
 .header {
-    position: relative;
-    text-align: center;
-    color: white;
+    margin-top: 20px; /* Baja el encabezado */
+    padding-top: 10px; /* Añade espacio dentro del encabezado */
+}
 }
 
 .header .fondo-imagen {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
 }
 
 .header nav ul {
     list-style: none;
-    margin: 0;
+    margin: 2px;
     padding: 0;
     display: flex;
     justify-content: center;
